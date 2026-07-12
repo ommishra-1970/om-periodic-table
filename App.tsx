@@ -50,7 +50,7 @@ const App: React.FC = () => {
 
   return (
     <div className="flex flex-col lg:flex-row h-screen w-full bg-white overflow-hidden">
-      <div className="flex-1 relative h-[40vh] lg:h-full flex items-center justify-center p-4 lg:p-8 overflow-hidden bg-gray-50/50">
+      <div className="relative w-full h-[40vh] lg:h-full lg:flex-1 flex items-center justify-center p-4 lg:p-8 overflow-hidden bg-gray-50/50">
         <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_#3b82f6_0%,_transparent_70%)]"></div>
         
         <div className="z-10 w-full h-full max-w-4xl max-h-4xl">
@@ -98,7 +98,7 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-full lg:w-[680px] bg-white h-full border-l border-gray-200 z-30 shadow-2xl overflow-hidden">
+      <div className="w-full h-[60vh] lg:h-full lg:w-[680px] bg-white border-l border-gray-200 z-30 shadow-2xl overflow-hidden">
         <PropertyPanel state={atomState} onSelectElement={handleSelectElement} />
       </div>
 
